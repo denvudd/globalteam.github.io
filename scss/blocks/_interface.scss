@@ -1,0 +1,81 @@
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+  color: #333333;
+  line-height: 1.6;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  background: url('../img/bg.png');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-weight: inherit;
+}
+
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+svg {
+  pointer-events: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
