@@ -1,0 +1,137 @@
+.solution {
+  padding-top: 256px;
+
+  &-cards {
+    margin-top: 72px;
+
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      padding: 80px 56px;
+      background: #FFFEFC;
+      border-radius: 20px;
+      margin-right: 32px;
+      margin-left: 32px;
+      margin-bottom: 24px;
+      box-shadow: 10px 4px 30px rgba(172, 172, 172, 0.25);
+      transition: 0.1s ease-in-out;
+      max-width: 400px;
+      width: 100%;
+
+      &:hover {
+        background: #39379F;
+
+        .solution-cards__title {
+          color: #FFFEFC;
+        }
+
+        .solution-cards__text {
+          color: #FFFEFC;
+        }
+
+        .solution-cards__icon {
+          border-bottom: 1px solid #FFFEFC;
+        }
+      }
+    }
+
+    &__title {
+      color: #1C2D5A;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+      transition: 0.1s ease-in-out;
+    }
+
+    &__icon {
+      margin-top: 25px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(28, 45, 90, 0.12);
+      max-width: 89px;
+      width: 100%;
+      transition: 0.1s ease-in-out;
+    }
+
+    &__img {
+      max-width: 89px;
+      width: 100%;
+    }
+
+    &__text {
+      margin-top: 24px;
+      color: #1C2D5A;
+      transition: 0.1s ease-in-out;
+      max-width: 288px;
+      width: 100%;
+    }
+  }
+
+  &-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 64px;
+
+    &__button {
+      display: flex;
+    }
+
+    &__text {
+      margin-top: 16px;
+      max-width: 330px;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      line-height: 20px;
+      color: #1C2D5A;
+    }
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .solution-cards__item {
+    max-width: 320px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 42px 36px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .solution {
+    padding-top: 180px;
+  }
+
+  .solution-cards__item {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .solution-cards__text {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .solution {
+    padding-top: 96px;
+  }
+
+  .solution-cards__item {
+    padding: 32px 26px;
+  }
+
+  .solution-panel {
+    margin-top: 26px;
+  }
+}

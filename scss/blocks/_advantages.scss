@@ -1,0 +1,239 @@
+.advantages {
+  padding-top: 256px;
+
+  &__inner {
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 72px;
+
+    &:nth-child(even) {
+      .advantages-row__text {
+        order: 1;
+      }
+
+      .advantages-photo {
+        order: 0;
+      }
+
+      .advantages-row__num {
+        order: 1;
+      }
+
+      .advantages-row__head {
+        order: 0;
+      }
+    }
+
+    &__text {
+      max-width: 567px;
+      width: 100%;
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+    }
+
+    &__head {
+      color: #1C2D5A;
+    }
+
+    &__title {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 37px;
+      text-transform: uppercase;
+    }
+
+    &__num {
+      font-weight: bold;
+      font-size: 120px;
+      line-height: 146px;
+      text-transform: uppercase;
+      color: rgba(198, 202, 212, 0.14);
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: rgba(198, 202, 212, 1);
+      margin-right: 48px;
+    }
+
+    &__subtitle {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      margin-top: 16px;
+    }
+
+    &__p {
+      margin-top: 64px;
+      font-size: 16px;
+      line-height: 20px;
+      color: #1C2D5A;
+
+      p {
+        padding-block-start: 1em;
+        padding-block-end: 1em;
+      }
+    }
+
+    &__list {
+      list-style-image: url('../img/svg/ellipse-marker.svg');
+      margin-inline-start: 1.3em !important;
+
+      li {
+        padding-block-start: 0.5em;
+        padding-block-end: 0.5em;
+      }
+    }
+
+    &__panel {
+      display: flex;
+      margin-top: 32px;
+
+      &__item {
+        text-align: center;
+        background: #FFFEFC;
+        box-shadow: 10px 4px 30px rgba(172, 172, 172, 0.25);
+        border-radius: 10px;
+        margin-right: 16px;
+        max-width: 176px;
+        width: 100%;
+        padding: 24px;
+      }
+
+      &__photo {}
+
+      &__img {
+        max-width: 37px;
+        max-height: 35px;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      &__title {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #1C2D5A;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  &-logos {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .advantages-row {
+    flex-direction: column;
+
+    &:nth-child(even) {
+      .advantages-row__text {
+        order: 0;
+      }
+
+      .advantages-photo {
+        order: 1;
+      }
+
+      .advantages-row__num {
+        order: 0;
+      }
+
+      .advantages-row__head {
+        order: 1;
+      }
+    }
+
+    &__p {
+      margin-top: 34px;
+    }
+  }
+
+  .advantages-photo {
+    margin-top: 34px;
+  }
+
+  /* Only 1200- breakpoint */
+
+  .advantages-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+  }
+
+  .advantages-logo {
+    margin-left: 31px;
+    margin-right: 31px;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .advantages {
+    padding-top: 128px;
+  }
+
+  .advantages-row {
+    margin-bottom: 64px;
+  }
+
+  .advantages-row__num {
+    font-size: 60px;
+    margin-right: 23px;
+    line-height: 73px;
+  }
+
+  .advantages-row__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .advantages-row__subtitle {
+    font-size: 16px;
+    margin-top: 8px;
+    line-height: 17px;
+  }
+
+  .advantages-row__p {
+    font-size: 14px;
+    margin-top: 24px;
+  }
+
+  .advantages__inner {
+    margin-top: 42px;
+  }
+
+  .advantages-row__panel {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23px;
+  }
+
+  .advantages-row__panel__item {
+    margin: 4px auto;
+    max-width: 230px;
+    padding: 24px 32px;
+  }
+
+  .advantages-logo {
+    margin-right: 11px;
+    margin-left: 11px;
+  }
+}
