@@ -1,0 +1,35 @@
+.pre-footer {
+  padding-top: 168px;
+  padding-bottom: 196px;
+  background: url('../img/pre-footer/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &-text {
+    color: #FFFFFF;
+    max-width: 666px;
+    margin: 0 auto;
+
+    &__title {
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 1.2;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  &-panel {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+
+    &__button {
+      display: flex;
+      border: 0;
+      outline: none;
+    }
+  }
+
+
+}

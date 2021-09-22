@@ -1,0 +1,70 @@
+.partnership {
+  background: url("../img/partnership/bg.png");
+  padding-top: 276px;
+  padding-bottom: 211px;
+
+  &__text {
+    max-width: 600px;
+    width: 100%;
+    margin-left: 86px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #1C2D5A;
+  }
+
+  &__panel {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 36px;
+  }
+
+  &__button {
+    background: linear-gradient(95.03deg, #39379F 0%, #6B59D8 145.26%);
+    border-radius: 40px;
+    padding: 21px 25px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #FFFEFC;
+    filter: drop-shadow(4px 4px 10px rgba(65, 60, 168, 0.25));
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .partnership {
+    padding-top: 196px;
+    padding-bottom: 196px;
+  }
+
+  .partnership__text {
+    width: 576px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .partnership__title {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .partnership__text {
+    width: 280px;
+    width: 100%;
+  }
+
+  .partnership__title {
+    font-size: 21px;
+  }
+}
